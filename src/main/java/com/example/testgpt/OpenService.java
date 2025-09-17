@@ -47,7 +47,8 @@ public class OpenService {
                 .bodyToMono(String.class)
                 .block();
 
-        return extractResponse(response);
+        String out= extractResponse(response);
+        return out;
     }
 
     private String extractResponse(String response) {
